@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Interior.css">
+    <title> Study Rooms </title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+
+
+    <!--Progress Bar -->
+
+      <div class="progress-bar"></div>
+      <script src="nanobar.js"></script>
+      <script>
+        var nanobar = new Nanobar();
+        var element = document.documentElement,
+          body = document.body,
+          scrollTop = 'scrollTop',
+          scrollHeight = 'scrollHeight',
+          progress = document.querySelector('.progress-bar'),
+          scroll;
+          document.addEventListener('scroll', function() {
+          scroll = (element[scrollTop]||body[scrollTop]) / ((element[scrollHeight]||body[scrollHeight]) - element.clientHeight) * 100;
+          progress.style.setProperty('--scroll', scroll + '%');
+          });
+      </script>
+
+
+    <!-- Header section -->
+
+      <header id="header">
+        <div class="logo-section">
+          <img src="Logo.png" alt="LOGO" id="header-img" class="logo-sec" style="width:50px; height:50px; border-radius:0px;">
+        </div>
+        <nav id="nav-bar" class="navigation-bar">
+          <ul style="list-style-type: none;" class="navigation">
+            <li> <a href="index.html#JPI" class="nav-link"> Home </a></li>
+            <li> <a href="index.html#About" class="nav-link"> Our Story </a></li>
+            <li> <a href="index.html#Designs" class="nav-link"> Featured </a></li>
+            <li> <a href="index.html#Contact" class="nav-link"> Contact Us </a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+    <!-- Introduction -->
+
+      <div class="box" style="background-image: url('xyz.jpeg'); width: 60%; height: 300px;">
+        <h1> AN INSIGHT TO SOME MORE OF <br> STUDY ROOMS <br> DESIGNED EXCLUSIVELY BY JPI </h1>
+        <div class="chat">
+          <p> Unfortunately, teenage life can't always be about going out with friends and having fun, these crucial years are also a time to
+              shape future careers and hone a craft; so here is a wealth of teen workspaces to inspire those developing minds! </p>
+        </div>
+      </div>
+
+
+    <!--Samples' section -->
+
+      <div class="image-container">
+        <div class="interior">
+          <img src="http://cdn.home-designing.com/wp-content/uploads/2012/08/Sophisticated-teen-room-copy-665x356.jpg">
+          <div class="shade">
+            <h1 class="caption"> Sophisticated teen room </h1>
+          </div>
+        </div>
+        <div class="interior">
+          <img src="http://cdn.home-designing.com/wp-content/uploads/2012/08/Sport-themed-teenager-bedroom-665x436.jpg">
+          <div class="shade">
+            <h1 class="caption"> Sports themed </h1>
+          </div>
+        </div>
+        <div class="interior">
+          <img src="http://cdn.home-designing.com/wp-content/uploads/2012/08/White-red-teenager-bedroom-study-665x395.jpg">
+          <div class="shade">
+            <h1 class="caption"> Contemporary </h1>
+          </div>
+        </div>
+        <div class="interior">
+          <img src="study.jpg">
+          <div class="shade">
+            <h1 class="caption"> Grass Touch </h1>
+          </div>
+        </div>
+        <div class="interior">
+          <img src="http://cdn.home-designing.com/wp-content/uploads/2011/06/orange-and-white-young-childs-workspace-665x474.jpg">
+          <div class="shade">
+            <h1 class="caption"> Wake up in Orange </h1>
+          </div>
+        </div>
+        <div class="interior">
+          <img src="http://cdn.home-designing.com/wp-content/uploads/2011/06/mauve-workspace-665x553.jpg">
+          <div class="shade">
+            <h1 class="caption"> Mauve workspace </h1>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Closure section -->
+
+      <div class="closure" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6lYyW1lLPoRtaFO6hJLKIJ4MTib34rGSvpA&usqp=CAU'); width: 40%; height: 250px;">
+        <h1> For more information, <br> grab an appointment <br> with our designers in the <br> <a style="font-size: 20px;" href="index.html#Contact"> "Contact Us" </a> <br> section. </h1>
+      </div>
+
+
+    <!-- Footer Section -->
+
+      <footer class="footer-section">
+        <div class="footer-info">
+          <ul style="list-style-type: none;">
+            <li> <span> Privacy &nbsp; &nbsp; &nbsp; &nbsp; </span> </li>
+            <li> <span> Terms &nbsp; &nbsp; &nbsp; &nbsp; </span> </li>
+            <li> <span> Contact &nbsp; &nbsp; &nbsp; &nbsp; </span> </li>
+          </ul>
+        </div>
+          <span class="p-info"> Created by Pratima Rajput. <br> 20501411 </span>
+          <span> Copyright &copy; 2021 </span>
+      </footer>
+
+  </body>
+</html>
